@@ -1,0 +1,17 @@
+Source: timer-entropyd
+Section: unknown
+Priority: extra
+Maintainer: René Vögeli <rvoegeli@rangee.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: https://www.vanheusden.com/te/
+
+Package: timer-entropyd
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: This program feeds the /dev/random device with entropy-data (random values) read from timers.
+ It does this by measuring how much longer or shorter a sleep takes (this fluctuates a little - microseconds). The time for a sleep jitters due to that the frequency of the clocks of the timers change when they become colder or hotter (and a few other parameters).
+ This program does not require any extra hardware.
+ It produces around 500 bits per second.
+ This program is also usable with virtualized systems (KVM has virtio-rnd, you can then still use this program on the host).

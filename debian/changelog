@@ -1,0 +1,5 @@
+timer-entropyd (0.3) rangeeos; urgency=low
+
+  * Initial release
+
+ -- René Vögeli <rvoegeli@rangee.com>  Thu, 15 Nov 2018 13:01:56 +0100
